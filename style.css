@@ -1,0 +1,92 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tarjeta de perfil */
+.profile-card {
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    width: 300px;
+    padding: 15px 20px;
+}
+
+/* Información del perfil */
+.profile-info {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Imagen del perfil */
+.profile-info img {
+    margin-top: 15px;
+    border-radius: 100px;
+    width: 100px;
+    transition: 1s;
+}
+
+.profile-info img:hover{
+    transform: scale(1.5) rotate(360deg);
+}
+
+/* Títulos y texto */
+.profile-info h1{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.profile-info h3{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #c5f82a;
+}
+
+.profile-info p{
+    color: #a8a6a6;
+    margin: 30px 0 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Enlaces redes sociales */
+.social-links ul:hover > :not(:hover){
+    opacity: 0.4;       
+}
+
+.social-links li{
+    display: flex;
+    justify-content: center;
+    background-color:#333333;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto;
+    transition: opacity 0.6s ease;
+    transition: scale 0.6 ease;
+}
+
+.social-links li:hover{
+    transform: scale(1.1);     
+}
+
+.social-links a{
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
